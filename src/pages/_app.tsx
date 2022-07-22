@@ -1,11 +1,8 @@
 import type { AppProps } from 'next/app';
-// import '../styles/components/normalize.css';
-// import '../styles/index.css';
+import '@styles/index.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-      <Component {...pageProps} />
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
