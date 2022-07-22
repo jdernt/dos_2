@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { WithRouterProps } from 'next/dist/client/with-router';
-// import Header from '@components/pages/header';
+import Header from '@components/pages/header';
 // import Footer from '@components/pages/footer';
 
 interface P extends WithRouterProps {}
@@ -23,7 +23,7 @@ export class Page<PP = {}, SS = {}> extends React.Component<PP & P, SS & S> {
     return (
       <div className='page-wrapper'>
         {this.renderHead()}
-        {/* <Header cartProductsCount={products.length || 0} /> */}
+        <Header />
         {children}
         {/* <Footer /> */}
       </div>
