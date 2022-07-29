@@ -19,7 +19,7 @@ export class Page<PP = {}, SS = {}> extends React.Component<PP & P, SS & S> {
     );
   }
 
-  _render(children: any) {
+  _render(children?: any) {
     return (
       <div className='page-wrapper'>
         {this.renderHead()}
